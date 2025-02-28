@@ -1,0 +1,56 @@
+# 🚀 Calculadora Física con Simulación de Tren  
+
+Este proyecto es una **calculadora de problemas físicos** con una **simulación interactiva del movimiento de un tren**.  
+
+---
+
+## 🛠 **Instrucciones para Ejecutar el Proyecto**  
+
+### 🔹 **1. Clonar el repositorio**  
+```bash
+git clone https://github.com/tu-usuario/practica-2-web.git
+cd practica-2-web
+
+2. Crear un entorno virtual
+bash
+Copy
+Edit
+python -m venv venv
+Luego activa el entorno virtual:
+
+Windows:
+bash
+Copy
+Edit
+venv\Scripts\activate
+Mac/Linux:
+bash
+Copy
+Edit
+source venv/bin/activate
+🔹 3. Instalar dependencias
+bash
+Copy
+Edit
+pip install -r requirements.txt
+🔹 4. Ejecutar el Proyecto
+bash
+Copy
+Edit
+python app.py
+Luego, abre tu navegador y ve a:
+
+cpp
+Copy
+Edit
+http://127.0.0.1:5000/
+
+📢 Requisitos
+Python 3.8 o superior
+Flask
+Para instalar Flask manualmente:
+
+bash
+Copy
+Edit
+pip install flask

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Física</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Práctica de Física</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">📊 Calculadora Física</h2>
+        <form id="calculoForm">
+            <label for="problema" class="form-label">Selecciona un problema:</label>
+            <select name="problema" id="problema" class="form-select">
+                <option value="1">Tiempo del impulso nervioso</option>
+                <option value="2">Crecimiento del cabello</option>
+                <option value="3">Movimiento del electrón</option>
+                <option value="4">Movimiento de carritos</option>
+                <option value="5">Tiempo perdido del tren</option>
+            </select>
+
+            <div id="parametros" class="mt-4 p-3 bg-light border rounded">
+                <h5>📌 Parámetros del cálculo:</h5>
+                <p id="descripcion"></p>
+                <div id="inputs"></div>
+            </div>
+
+            <!-- Botón de calcular -->
+            <button type="submit" class="btn btn-primary mt-3 w-100">Calcular</button>
+
+            <!-- Botón para acceder a la simulación del tren (inicialmente oculto) -->
+            <a href="/simulacion" id="btnSimulacion" class="btn btn-success mt-3 w-100 d-none">🚆 Ver Simulación del Tren</a>
+
+        </form>
+
+        <div id="resultado" class="alert alert-success mt-4 text-center d-none"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
