@@ -56,7 +56,6 @@ http://127.0.0.1:5000/
 │   │── resultado.html              # Página de resultados
 │   │── simulacion.html             # Página de simulación del tren
 │── app.py                          # Lógica principal en Flask
-│── requirements.txt                 # Lista de dependencias
 │── README.md                        # Instrucciones del proyecto
 ```
 
